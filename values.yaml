@@ -1,0 +1,12 @@
+## CTA수강생용, CAA수강생은 아래의 value.yaml을 이용하세요
+replicas: 3
+port: 8000
+
+image:
+  repository: public.ecr.aws/q2w5i2w9/biz-order
+  tag: v1
+  imagePullPolicy: IfNotPresent
+  containerPort: 8081
+
+domain: ppp0183.click  #예시) ctacta.click
+subdomain: rollouts-demo
